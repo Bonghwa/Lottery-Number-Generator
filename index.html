@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottery Number Generator</title>
+    <meta
+      name="description"
+      content="This app may bring you a life-changing chance tonight. Try this out!"
+    />
+    <meta name="author" content="Bonghwa" />
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Lottery Number Generator</h1>
+        <form action="">
+          <div class="form-field">
+            <span>Lottery Type: </span>
+            <input type="radio" name="lottery" value="49" id="toto" checked />
+            <label for="toto">TOTO <img src="https://www.worldometers.info/img/flags/small/tn_sn-flag.gif" alt=""></label>
+            <input type="radio" name="lottery" value="45" id="lotto" />
+            <label for="lotto">Lotto 6/45 <img src="https://www.worldometers.info/img/flags/small/tn_ks-flag.gif" alt=""></label>
+          </div>
+          <hr />
+          <div class="form-field">
+            <label for="bet-type">Bet Type: </label>
+            <select name="" id="bet-type">
+              <option value="6">Ordinary</option>
+              <option value="7">System 7</option>
+              <option value="8">System 8</option>
+              <option value="9">System 9</option>
+              <option value="10">System 10</option>
+              <option value="11">System 11</option>
+              <option value="12">System 12</option>
+            </select>
+          </div>
+          <hr />
+          <button type="submit" class="btn">Get the lucky numbers: Huat ah!</button>
+        </form>
+        <div class="numbers"></div>
+      </div>
+    </section>
+  </body>
+</html>
