@@ -10,25 +10,27 @@
       content="This app may bring you a life-changing chance tonight. Try this out!"
     />
     <meta name="author" content="Bonghwa" />
+    <link rel="icon" type="image/png" href="./imgs/favicon.png" />
     <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
     <section>
-      <div class="container">
+      <div class="container box">
         <h1>Lottery Number Generator</h1>
         <form action="">
           <div class="form-field">
             <span>Lottery Type: </span>
-            <input type="radio" name="lottery" value="49" id="toto" checked />
-            <label for="toto">TOTO <img src="https://www.worldometers.info/img/flags/small/tn_sn-flag.gif" alt=""></label>
-            <input type="radio" name="lottery" value="45" id="lotto" />
-            <label for="lotto">Lotto 6/45 <img src="https://www.worldometers.info/img/flags/small/tn_ks-flag.gif" alt=""></label>
+            <div class="lot-type">
+              <input type="radio" name="lottery" value="49" id="toto" checked />
+              <label for="toto">TOTO (SG)</label>
+              <input type="radio" name="lottery" value="45" id="lotto" />
+              <label for="lotto">Lotto 6/45 (KR)</label>
+            </div>
           </div>
-          <hr />
           <div class="form-field">
-            <label for="bet-type">Bet Type: </label>
+            <span>Bet Type: </span>
             <select name="" id="bet-type">
               <option value="6">Ordinary</option>
               <option value="7">System 7</option>
@@ -39,10 +41,24 @@
               <option value="12">System 12</option>
             </select>
           </div>
-          <hr />
           <button type="submit" class="btn">Get the lucky numbers: Huat ah!</button>
         </form>
-        <div class="numbers"></div>
+        <div class="number-box">
+          <div class="numbers">
+            <div class="group0">2</div>
+            <div class="group1">10</div>
+            <div class="group2">20</div>
+            <div class="group3">30</div>
+            <div class="group4">40</div>
+            <div class="group0">41</div>
+            <div class="group1">7</div>
+            <div class="group2">12</div>
+            <div class="group3">24</div>
+            <div class="group4">35</div>
+            <div class="group0">43</div>
+            <div class="group1">45</div>
+          </div>
+        </div>
       </div>
     </section>
   </body>

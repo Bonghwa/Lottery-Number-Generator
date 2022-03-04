@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+  --signature-green: #087957;
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --gray: #eee;
+  --dark-gray: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--gray);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: var(--light-blue);
+  padding: 2rem;
+  width: 50rem;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: var(--white);
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.form-field label {
+  cursor: pointer;
+}
+
+.lot-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+select {
+  width: 55%;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #cd071e;
+  color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background-color: var(--color-sec);
+}
+
+.number-box {
+  background-color: #fafafa;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers div {
+  width: 7rem;
+  height: 7rem;
+  margin: 3px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 7rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.group0 {
+  background-color: #fbc400;
+}
+
+.group1 {
+  background-color: #69c8f2;
+}
+
+.group2 {
+  background-color: #ff7272;
+}
+
+.group3 {
+  background-color: #aaaaaa;
+}
+
+.group4 {
+  background-color: #b0d840;
+}
